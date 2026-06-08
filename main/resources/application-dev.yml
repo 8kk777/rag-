@@ -4,7 +4,7 @@ server:
 spring:
   # dev 用于本地源码启动，优先读取 `.env` 中的同名变量。
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/PaiSmart?useSSL=false&serverTimezone=UTC}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/Rag?useSSL=false&serverTimezone=UTC}
     username: ${SPRING_DATASOURCE_USERNAME:root}
     password: ${SPRING_DATASOURCE_PASSWORD:}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -127,7 +127,7 @@ logging:
     org.springframework.web: ${LOG_LEVEL_WEB:DEBUG}
     org.springframework.boot.autoconfigure.web.servlet: ${LOG_LEVEL_AUTOCONFIG:DEBUG}
     org.springframework.security: ${LOG_LEVEL_SECURITY:DEBUG}
-    com.yizhaoqi.smartpai: ${LOG_LEVEL_APP:DEBUG}
+    com.yizhaoqi.rag: ${LOG_LEVEL_APP:DEBUG}
     io.minio: ${LOG_LEVEL_MINIO:DEBUG}
 
 deepseek:
